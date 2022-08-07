@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "491197457027",
+    "project_id": "mrdeadrim--location-alarm",
+    "storage_bucket": "mrdeadrim--location-alarm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491197457027:android:c7146d9eab79bba00731b6",
+        "android_client_info": {
+          "package_name": "com.mr_deadrim.location_alarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491197457027-9330d1entch7minq3pke5ngii5oiisms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAECxcRN8MKCHeiM61IlyuMeG1UogVci9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491197457027-9330d1entch7minq3pke5ngii5oiisms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
