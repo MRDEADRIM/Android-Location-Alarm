@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "491197457027",
-    "project_id": "mrdeadrim--location-alarm",
-    "storage_bucket": "mrdeadrim--location-alarm.appspot.com"
+    "project_number": "89128233290",
+    "project_id": "android-location-alarm-d6dcc",
+    "storage_bucket": "android-location-alarm-d6dcc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:491197457027:android:c7146d9eab79bba00731b6",
+        "mobilesdk_app_id": "1:89128233290:android:81e36dca385dd28abf39b3",
         "android_client_info": {
-          "package_name": "com.mr_deadrim.location_alarm"
+          "package_name": "com.android.location_alarm"
         }
       },
       "oauth_client": [
         {
-          "client_id": "491197457027-9330d1entch7minq3pke5ngii5oiisms.apps.googleusercontent.com",
+          "client_id": "89128233290-73anqlcf2mjglmm2hqgqighu4ms3otjh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAECxcRN8MKCHeiM61IlyuMeG1UogVci9E"
+          "current_key": "AIzaSyA6tfLJY6_7Rf8hEHCt-g-C56UfODWS8Cg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "491197457027-9330d1entch7minq3pke5ngii5oiisms.apps.googleusercontent.com",
+              "client_id": "89128233290-73anqlcf2mjglmm2hqgqighu4ms3otjh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

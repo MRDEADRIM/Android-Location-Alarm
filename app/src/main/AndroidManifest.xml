@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mr_deadrim.location_alarm">
+    package="com.android.location_alarm">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -9,9 +9,10 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
         android:allowBackup="true"
@@ -20,18 +21,50 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidLocationAlarm">
+        <activity android:name=".Snooz"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name=".DiscussionActivity"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".GpsActivity"
-            android:exported="true" />
+            android:name=".Alert"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".SettingsActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Info"
-            android:exported="true" />
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".Settings"
-            android:exported="true" />
+            android:name=".SessionCreate"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".LocationInput"
-            android:exported="true" />
+            android:name=".ChatInput"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GpsView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LocationInputG"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChildInput"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChildTrackerIdS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChildTrackerId"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Parentchild"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SessionSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Chat"
+            android:screenOrientation="portrait" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -43,30 +76,58 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
         <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"
+            android:name=".GMapsActivity"
+            android:label="@string/title_activity_g_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Text"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SmsInput"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmergencyService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EmergencyS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LocationInputC"
             android:screenOrientation="portrait" />
 
         <receiver
             android:name=".GeofenceBroadcastReceiver"
             android:enabled="true"
             android:exported="true" />
+
         <activity
-            android:name=".Login"
-            android:exported="true" />
+            android:name=".CMapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PermissionsActivity"
-            android:exported="true" />
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Register"
-            android:exported="true">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <receiver android:name=".SnoozBroadcastReceiver" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
